@@ -1,0 +1,908 @@
+@font-face {
+	font-family: 'skater_girls_rockregular';
+	src: url('../font/skater_girls_rock.woff2') format('woff2'),
+	url('../font/skater_girls_rock.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+.intro-msg {
+	position: absolute;
+	top: 49%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+	text-shadow: 4px 0 0 #000, -4px 0 0 #000, 0 4px 0 #000, 0 -4px 0 #000, 2px 2px 0 #000, -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #000;
+	font-size: 145px;
+	line-height: 140px;
+	font-family: 'skater_girls_rockregular','Skater Girls Rock';
+	color: #ffc600;
+	width: 65%;
+	text-transform: uppercase;
+}
+
+.questions {
+	position: absolute;
+	top: 51%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	text-shadow: 4px 0 0 #000, -4px 0 0 #000, 0 4px 0 #000, 0 -4px 0 #000, 2px 2px 0 #000, -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #000;
+	font-family: 'skater_girls_rockregular','Skater Girls Rock';
+	color: #ffc600;
+	width: 70%;
+	text-transform: uppercase;
+}
+
+.desc {
+	font-size: 36px;
+	line-height: 40px;
+	c_olor: #fff;
+	t_ext-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px 0 #000, -1px -1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000;
+    color: #000000;
+    text-shadow: none;
+    -webkit-text-stroke-width: 0;
+}
+
+.question {
+	font-size: 55px;
+	line-height: 55px;
+	margin-bottom: 8px;
+    color: white;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px 0 #000, -1px -1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000
+}
+
+.answers {
+	font-size: 40px;
+	line-height: 45px;
+	color: #f7ec39;
+	-webkit-text-stroke-width: 0px;
+}
+
+.answer {
+	background: #087aff;
+	text-shadow: 2px 2px 0px #000;
+	border-radius: 50px;
+	padding: 10px 10px 3px 10px;
+	margin-bottom: 15px;
+	border: 2px solid #000;
+	box-shadow: 4px 4px 0px #000;
+}
+
+.answer.active {
+	background: #3acc52;
+	color: #f95428;
+}
+
+.answer.blink {
+	-webkit-animation: animateBlink 0.4s ease-out 10 forwards;
+	-moz-animation: animateBlink 0.4s ease-out 10 forwards;
+	animation: animateBlink 0.4s ease-out 10 forwards;
+}
+
+@-webkit-keyframes animateBlink {
+	0% {
+		background-color: #087aff;
+	}
+	50% {
+		background-color: #3acc52;
+	}
+	100% {
+		background-color: #087aff;
+	}
+}
+
+@-moz-keyframes animateBlink {
+	0% {
+		background-color: #087aff;
+	}
+	50% {
+		background-color: #3acc52;
+	}
+	100% {
+		background-color: #087aff;
+	}
+}
+
+@keyframes animateBlink {
+	0% {
+		background-color: #087aff;
+	}
+	50% {
+		background-color: #3acc52;
+	}
+	100% {
+		background-color: #087aff;
+	}
+}
+
+body {
+	overflow: hidden;
+    cursor: none;
+}
+.hidden{
+    display: none;
+    opacity: 0;
+}
+.button {
+	background: #f95428;
+	font-family: 'skater_girls_rockregular','Skater Girls Rock';
+	color: #f7ec39;
+	border: 3px solid #000;
+	text-transform: uppercase;
+}
+
+.button.big {
+	border-radius: 50px;
+	font-size: 55px;
+	box-shadow: 5px 5px 0px #000;
+	padding: 5px 40px 0px 40px;
+	text-shadow: 2px 2px 0px #c31d1d;
+}
+
+.button.big:active {
+	margin-top: 3px;
+	margin-left: 3px;
+	box-shadow: 3px 3px 0px #000;
+	padding: 5px 40px 0px 40px;
+	text-shadow: 2px 2px 0px #c31d1d;
+}
+
+.bg {
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -2;
+	-webkit-transition: background-image 1s ease-in-out;
+	transition: background-image 1s ease-in-out;
+}
+
+.bg.dry {
+	background: url(../img/bgdry.jpg) top center no-repeat;
+	background-size: 100% 100%;
+}
+
+.bg.ok {
+	background: url(../img/bgok.jpg) top center no-repeat;
+	background-size: 100% 100%;
+}
+
+.bg.rain {
+	background: url(../img/bgrain.jpg) top center no-repeat;
+	background-size: 100% 100%;
+}
+
+.cloud {
+	background: url(../img/cloud.png) no-repeat center center;
+	background-size: cover;
+	height: 175px;
+	width: 355px;
+	font-family: 'skater_girls_rockregular','Skater Girls Rock';
+	text-transform: uppercase;
+	position: absolute;
+	top: 3%;
+	right: 6%;
+}
+
+.thermometer {
+	position: absolute;
+	right: 8%;
+	top: 15.5%;
+	height: 80%;
+	width: 105px;
+	z-index: -1;
+}
+
+.thermometer .front {
+	background: url(../img/thermometer.png) no-repeat center center;
+	background-size: 100% 100%;
+	position: absolute;
+	height: 750px;
+	height: 100%;
+	width: 105px;
+	right: 0px;
+	top: 0px;
+
+}
+
+.thermometer .bg-white {
+	background: #fff;
+	position: relative;
+	height: 720px;
+	height: 95%;
+	width: 75px;
+	left: 15px;
+	top: 25px;
+	z-index: -5;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.thermometer .bg-white .water {
+	background: #0fc5f3;
+	position: absolute;
+	height: 0%;
+	width: 100%;
+	bottom: 0px;
+	z-index: -5;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.blinkwater {
+	-webkit-animation: animateWater 1.5s linear 3 alternate;
+	-moz-animation: animateWater 1.5s linear 3 alternate;
+	animation: animateWater 1.5s linear 3 alternate;
+}
+
+@-webkit-keyframes animateWater {
+	0% {
+		background-color: #0fc5f3;
+	}
+	50% {
+		background-color: #83e6ff;
+	}
+	100% {
+		background-color: #0fc5f3;
+	}
+}
+
+@-moz-keyframes animateWater {
+	0% {
+		background-color: #0fc5f3;
+	}
+	50% {
+		background-color: #83e6ff;
+	}
+	100% {
+		background-color: #0fc5f3;
+	}
+}
+
+@keyframes animateWater {
+	0% {
+		background-color: #0fc5f3;
+	}
+	50% {
+		background-color: #83e6ff;
+	}
+	100% {
+		background-color: #0fc5f3;
+	}
+}
+
+.tv-plant {
+	height: 330px;
+	width: 250px;
+	background: url(../img/plant.png) no-repeat center center;
+	background-size: contain;
+	position: absolute;
+	width: 180px;
+	height: 310px;
+	right: 14%;
+	bottom: 5%;
+}
+
+.emoticon {
+	background: url(../img/plant-normal.png) no-repeat center bottom;
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	-webkit-transition: background-image 1s ease-in-out;
+	transition: background-image 1s ease-in-out;
+}
+
+.animateYes {
+	-webkit-animation: animateEmojiYes 2s ease-out infinite forwards;
+	-moz-animation: animateEmojiYes 2s ease-out infinite forwards;
+	animation: animateEmojiYes 2s ease-out infinite forwards;
+}
+
+.cool {
+	background-image: url(../img/plant-cool.png);
+}
+
+.cry {
+	background-image: url(../img/plant-cry.png);
+	-webkit-animation: animateEmojiYes 5s ease-out infinite forwards;
+	-moz-animation: animateEmojiYes 5s ease-out infinite forwards;
+	animation: animateEmojiYes 5s ease-out infinite forwards;
+}
+
+.cute {
+	background-image: url(../img/plant-cute.png);
+	-webkit-animation: animateEmojiYup 4s ease-out infinite forwards;
+	-moz-animation: animateEmojiYup 4s ease-out infinite forwards;
+	animation: animateEmojiYup 4s ease-out infinite forwards;
+}
+
+.good {
+	background-image: url(../img/plant-good.png);
+	-webkit-animation: animateEmojiYes 2.5s ease-out infinite forwards;
+	-moz-animation: animateEmojiYes 2.5s ease-out infinite forwards;
+	animation: animateEmojiYes 2.5s ease-out infinite forwards;
+}
+
+.haha {
+	background-image: url(../img/plant-haha.png);
+	-webkit-animation: animateEmojiYes 2.5s ease-out infinite forwards;
+	-moz-animation: animateEmojiYes 2.5s ease-out infinite forwards;
+	animation: animateEmojiYes 2.5s ease-out infinite forwards;
+}
+
+.haha2 {
+	background-image: url(../img/plant-haha2.png);
+	-webkit-animation: animateEmojiYes 2.5s ease-out infinite forwards;
+	-moz-animation: animateEmojiYes 2.5s ease-out infinite forwards;
+	animation: animateEmojiYes 2.5s ease-out infinite forwards;
+}
+
+.happy {
+	background-image: url(../img/plant-happy.png);
+	-webkit-animation: animateEmojiYes 2.5s ease-out infinite forwards;
+	-moz-animation: animateEmojiYes 2.5s ease-out infinite forwards;
+	animation: animateEmojiYes 2.5s ease-out infinite forwards;
+}
+
+.humpf {
+	background-image: url(../img/plant-humpf.png);
+	-webkit-animation: animateEmojiNo 10s ease-out infinite forwards;
+	-moz-animation: animateEmojiNo 10s ease-out infinite forwards;
+	animation: animateEmojiNo 10s ease-out infinite forwards;
+}
+
+.love {
+	background-image: url(../img/plant-love.png);
+	-webkit-animation: animateEmojiYup 3s ease-out infinite forwards;
+	-moz-animation: animateEmojiYup 3s ease-out infinite forwards;
+	animation: animateEmojiYup 3s ease-out infinite forwards;
+}
+
+.meh {
+	background-image: url(../img/plant-meh.png);
+}
+
+.normal {
+	background-image: url(../img/plant-normal.png);
+}
+
+.notcool {
+	background-image: url(../img/plant-notcool.png);
+	-webkit-animation: animateEmojiNo 8s ease-out infinite forwards;
+	-moz-animation: animateEmojiNo 8s ease-out infinite forwards;
+	animation: animateEmojiNo 8s ease-out infinite forwards;
+}
+
+.sad {
+	background-image: url(../img/plant-sad.png);
+}
+
+.super {
+	background-image: url(../img/plant-super.png);
+	-webkit-animation: animateEmojiYes .5s ease-out infinite forwards;
+	-moz-animation: animateEmojiYes .5s ease-out infinite forwards;
+	animation: animateEmojiYes .5s ease-out infinite forwards;
+}
+
+.tongue {
+	background-image: url(../img/plant-tongue.png);
+	-webkit-animation: animateEmojiYes .5s ease-out infinite forwards;
+	-moz-animation: animateEmojiYes .5s ease-out infinite forwards;
+	animation: animateEmojiYes .5s ease-out infinite forwards;
+}
+
+.wow {
+	background-image: url(../img/plant-wow.png);
+	-webkit-animation: animateEmojiYup 2s ease-out infinite forwards;
+	-moz-animation: animateEmojiYup 2s ease-out infinite forwards;
+	animation: animateEmojiYup 2s ease-out infinite forwards;
+}
+
+.tv-plant .ballon {
+	background: url(../img/ballon.png) no-repeat center center;
+	background-size: contain;
+	position: relative;
+	right: 245px;
+	top: 30px;
+	height: 250px;
+	padding: 25px;
+	width: 300px;
+	font-family: 'skater_girls_rockregular','Skater Girls Rock';
+	text-transform: uppercase;
+	font-size: 40px;
+	line-height: 35px;
+	vertical-align: middle;
+	opacity: 0;
+	-webkit-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
+
+.tv-plant .ballon.show {
+	opacity: 1;
+	-webkit-animation: animateDialog 1s ease-out 1 forwards;
+	-moz-animation: animateDialog 1s ease-out 1 forwards;
+	animation: animateDialog 1s ease-out 1 forwards;
+
+}
+
+.tv-plant .ballon .dialog {
+	position: absolute;
+	right: 0px;
+	top: 49%;
+	transform: translateY(-50%);
+	padding: 10px;
+	width: 100%;
+	display: inline;
+	text-align: center;
+}
+
+@-webkit-keyframes animateDialog {
+	0% {
+		margin-top: 10px;
+	}
+	100% {
+		margin-top: 0px;
+	}
+}
+
+@-moz-keyframes animateDialog {
+	0% {
+		margin-top: 10px;
+	}
+	100% {
+		margin-top: 0px;
+	}
+}
+
+@keyframes animateDialog {
+	0% {
+		margin-top: 10px;
+	}
+	100% {
+		margin-top: 0px;
+	}
+}
+
+@-webkit-keyframes animateEmojiYes {
+	0% {
+		bottom: 0;
+	}
+	60% {
+		bottom: -5px;
+	}
+	100% {
+		bottom: 0;
+	}
+}
+
+@-moz-keyframes animateEmojiYes {
+	0% {
+		bottom: 0;
+	}
+	60% {
+		bottom: -5px;
+	}
+	100% {
+		bottom: 0;
+	}
+}
+
+@keyframes animateEmojiYes {
+	0% {
+		bottom: 0;
+	}
+	60% {
+		bottom: -5px;
+	}
+	100% {
+		bottom: 0;
+	}
+}
+
+@-webkit-keyframes animateEmojiNo {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: -3px;
+	}
+	40% {
+		left: 3px;
+	}
+	60% {
+		left: -3px;
+	}
+	60% {
+		left: 3px;
+	}
+	100% {
+		left: 0;
+	}
+}
+
+@-moz-keyframes animateEmojiNo {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: -3px;
+	}
+	40% {
+		left: 3px;
+	}
+	60% {
+		left: -3px;
+	}
+	60% {
+		left: 3px;
+	}
+	100% {
+		left: 0;
+	}
+}
+
+@keyframes animateEmojiNo {
+	0% {
+		left: 0;
+	}
+	10% {
+		left: -3px;
+	}
+	20% {
+		left: 3px;
+	}
+	30% {
+		left: -3px;
+	}
+	50% {
+		left: 3px;
+	}
+	100% {
+		left: 0;
+	}
+}
+
+@-webkit-keyframes animateEmojiYup {
+	0% {
+		transform: scale(1);
+	}
+	60% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@-moz-keyframes animateEmojiYup {
+	0% {
+		transform: scale(1);
+	}
+	60% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes animateEmojiYup {
+	0% {
+		transform: scale(1);
+	}
+	60% {
+		transform: scale(0.95);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.cloud .t1 {
+	display: block;
+	width: 100px;
+	text-align: left;
+	font-size: 30px;
+	position: relative;
+	top: 25px;
+	left: 70px;
+}
+
+.cloud .points {
+	color: #f95428;
+	font-size: 120px;
+	line-height: 100px;
+	position: relative;
+	top: 8px;
+	left: 9px;
+	width: 215px;
+	text-align: center;
+	display: inline-block;
+}
+
+.cloud .t2 {
+	display: inline-block;
+	text-align: left;
+	position: relative;
+	top: 3px;
+	left: 5px;
+	width: 90px;
+	line-height: 20px;
+}
+
+.cloud .t2 .l1 {
+	font-size: 25px;
+	display: block;
+}
+
+.cloud .t2 .l2 {
+	font-size: 16.2px;
+	display: block;
+}
+
+.cloud .t2 .l3 {
+	font-size: 22px;
+	display: block;
+}
+
+.intro-button {
+	margin-top: 80px;
+	margin-bottom: 100px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.bubble {
+	background: #83e6ff;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	position: absolute;
+}
+
+@-webkit-keyframes animateBubble {
+	0% {
+		margin-top: 1000px;
+	}
+	100% {
+		margin-top: -100%;
+	}
+}
+
+@-moz-keyframes animateBubble {
+	0% {
+		margin-top: 1000px;
+	}
+	100% {
+		margin-top: -100%;
+	}
+}
+
+@keyframes animateBubble {
+	0% {
+		margin-top: 1000px;
+	}
+	100% {
+		margin-top: -100%;
+	}
+}
+
+@-webkit-keyframes sideWays {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: 15px;
+	}
+}
+
+@-moz-keyframes sideWays {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: 15px;
+	}
+}
+
+@keyframes sideWays {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: 15px;
+	}
+}
+
+.x1 {
+	-webkit-animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: -5%;
+	top: 5%;
+
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x2 {
+	-webkit-animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+	left: 5%;
+	top: 80%;
+
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x3 {
+	-webkit-animation: animateBubble 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 10%;
+	top: 40%;
+
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+.x4 {
+	-webkit-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+	left: 20%;
+	top: 0;
+
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x5 {
+	-webkit-animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+	left: 30%;
+	top: 50%;
+
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.x6 {
+	-webkit-animation: animateBubble 11s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 11s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 11s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 50%;
+	top: 0;
+
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.x7 {
+	-webkit-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 65%;
+	top: 70%;
+
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x8 {
+	-webkit-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+	left: 80%;
+	top: 10%;
+
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x9 {
+	-webkit-animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+	left: 90%;
+	top: 50%;
+
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x10 {
+	-webkit-animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 80%;
+	top: 80%;
+
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+@media only screen and (max-width: 1580px) {
+	.intro-msg {
+		width: 70%;
+		font-size: 120px;
+		line-height: 110px;
+	}
+}
+
+@media only screen and (max-width: 1366px) and (max-height: 768px) {
+	.intro-msg {
+		width: 70%;
+		font-size: 120px;
+		line-height: 110px;
+	}
+	.tv-plant {
+		height: 280px;
+		width: 163px;
+	}
+	.tv-plant .ballon {
+		top: -10px;
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+	.intro-msg {
+		width: 70%;
+		font-size: 105px;
+		line-height: 100px;
+	}
+	.tv-plant {
+		height: 280px;
+		width: 163px;
+	}
+	.tv-plant .ballon {
+		top: -10px;
+	}
+}
+
+.fade {
+	-webkit-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+}
+
+.show {
+	opacity: 1;
+}
+
+.hide {
+	opacity: 0;
+
+}

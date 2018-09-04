@@ -1,0 +1,1349 @@
+@font-face {
+	font-family: 'skater_girls_rockregular';
+	src: url('../font/skater_girls_rock.woff2') format('woff2'),
+	url('../font/skater_girls_rock.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+body {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-o-user-select: none;
+}
+
+.button {
+	background: #f95428;
+	font-family: 'Skater Girls Rock', skater_girls_rockregular;
+	color: #f7ec39;
+	border: 3px solid #000;
+	text-transform: uppercase;
+	display: inline-block;
+	transition: none;
+}
+
+.button.big {
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	border-radius: 50px;
+	font-size: 55px;
+	box-shadow: 5px 5px 0px #000;
+	padding: 5px 40px 0px 40px;
+	text-shadow: 2px 2px 0px #c31d1d;
+}
+
+.button.big.option {
+	font-size: 37px;
+    line-height: 40px;
+    width: 100%;
+    background: #087aff;
+    text-shadow: 2px 2px 0px #0c59b2;
+    padding-top: 15px;
+    padding-bottom: 10px;
+	letter-spacing: 0.3px;
+}
+.gardenimg{
+    position: absolute;
+    bottom: 0;
+    background: url(../img/garden.png) no-repeat right bottom;
+    right: 0;
+    width: 532px;
+    height: 280px;
+    background-size: 100% 100%;
+}
+.big:hover {
+	color: #ffd800;
+	border: 3px solid #550101;
+	box-shadow: 5px 5px 0px #550101;
+}
+
+#tab-content .button.big.option.focus {
+	color: #f95428;
+}
+
+.button.big.category {
+	font-size: 40px;
+	width: 100%;
+	background: #2b5d96;
+	text-shadow: 2px 2px 0px #0c59b2;
+}
+
+.question {
+	font-size: 40px;
+	line-height: 45px;
+	text-align: center;
+	font-family: 'Skater Girls Rock', skater_girls_rockregular;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+}
+.question-inner{
+	width: 80%;
+	margin: 0 auto;
+	font-size: 36px;
+	line-height: 40px;
+	margin-bottom: 18px;
+	border-bottom: 2px solid #fae3ca;
+}
+
+.button.big.category.active {
+	background: #3acc52;
+	margin-top: 2px;
+	margin-left: 2px;
+	margin-bottom: -2px;
+	box-shadow: 3px 3px 0px #000;
+	text-shadow: 2px 2px 0px #0b6b1b;
+}
+
+.top {
+	margin-top: 45px;
+	margin-bottom: 40px;
+	padding: 0 14% 0 10%;
+}
+
+.answers {
+	margin: 0 auto;
+	padding: 0 8%;
+}
+
+.answers .line {
+	margin-bottom: 20px;
+	clear: both;
+}
+
+.answers .line .column {
+	width: 48%;
+	display: block;
+	float: left;
+}
+
+.answers .line .column:first-child {
+	margin-right: 3%;
+}
+
+.feeling-thirsty {
+	background: #eec497;
+}
+
+.modal-dialog {
+	font-size: 45px;
+	line-height: 46px;
+	text-align: center;
+	font-family: 'Skater Girls Rock', skater_girls_rockregular;
+	text-transform: uppercase;
+}
+
+.modal .button {
+	font-size: 35px;
+}
+
+.modal-content {
+	border-radius: 30px;
+	border: #000 solid 4px;
+}
+
+.modal-header {
+	display: block;
+	border-bottom: 0px;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+.modal-body {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.modal-footer {
+	border-top: 0px;
+	padding: 25px;
+	padding-top: 5px;
+	text-align: center;
+	display: block;
+}
+
+.modal-title {
+	font-size: 30px;
+	line-height: 30px;
+}
+
+#modal_consenting .modal-body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 20px;
+	text-transform: none;
+	line-height: 30px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+#modal_thanks .modal-body {
+	font-size: 35px;
+	line-height: 40px;
+	margin-bottom: 25px;
+}
+
+label.btn.button.big.category {
+	white-space: normal !important;
+	font-size: 35px;
+	line-height: 36px;
+    margin-bottom: 15px;
+	padding: 20px 30px 15px 30px;
+}
+
+a.consent-link,
+a.consent-link:hover,
+a.consent-link:focus,
+a.consent-link:active {
+	color: #763e35;
+	text-decoration: none;
+}
+
+.consent-link span {
+	color: #763e35;
+	border-bottom: 1px solid #763e35;
+}
+
+.consent-link::after {
+	content: '';
+	position: relative;
+	left: 10px;
+	top: 20px;
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid #ccc;
+	border-bottom: 0px;
+}
+
+.consent-link.read::after {
+	top: -12px;
+	border-bottom: 7px solid #ccc;
+	border-top: 0px;
+}
+
+.full-text {
+	font-size: 17px;
+	line-height: 22px;
+	height: 300px;
+}
+
+.hidden {
+	display: none;
+}
+
+.full-text p {
+	margin-bottom: .9rem;
+}
+
+.scrollbar {
+	overflow: auto;
+}
+
+.scrollbar::-webkit-scrollbar {
+	width: 12px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+	background-color: #eaeaea;
+	border: 0px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+	background-color: #9d9d9d;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+	background-color: #aaa;
+}
+
+.button.yes {
+	background: #25ab3b;
+	text-shadow: 2px 2px 0px #0b6b1b;
+	width: 140px;
+}
+
+.button.no {
+	background: #f94528;
+	width: 140px;
+}
+
+.bench {
+	background: url(../img/bench.png) no-repeat center center;
+	background-size: contain;
+	height: 320px;
+	width: 320px;
+	margin: 40px auto 0;
+}
+
+.bench .player1 {
+	background: url(../img/person.png) no-repeat center center;
+	background-size: contain;
+	opacity: 0.5;
+	height: 320px;
+	width: 115px;
+	position: relative;
+	left: -5px;
+	top: -26px;
+	display: inline-block;
+	transition: opacity .2s linear;
+}
+
+.bench .player2 {
+	background: url(../img/person.png) no-repeat center center;
+	background-size: contain;
+	opacity: 0.5;
+	height: 320px;
+	width: 115px;
+	position: relative;
+	left: -5px;
+	top: -26px;
+	display: inline-block;
+	transition: opacity .2s linear;
+}
+
+#startbutton.fade {
+	transition: opacity 1s linear;
+}
+
+.hide {
+	opacity: 0;
+}
+
+.show {
+	opacity: 1;
+}
+
+#modal-countdown {
+	font-size: 20px;
+	line-height: 25px;
+	color: #bbb;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: bold;
+}
+#modal_playing .modal-title{
+	margin-top: 10px;
+	font-size: 40px;
+	line-height: 35px;
+}
+#modal_watering .modal-title{
+	margin-top: 10px;
+	font-size: 43px;
+	line-height: 50px;
+}
+
+#modal_watering .modal-body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 27px;
+	text-transform: none;
+	line-height: 33px;
+	margin-bottom: 10px;
+}
+
+#modal_tips .modal-title {
+	margin-top: 10px;
+	font-size: 50px;
+	line-height: 50px;
+}
+
+#modal_tips .tips {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 27px;
+	text-transform: none;
+	line-height: 33px;
+	margin-bottom: 10px;
+}
+
+#modal_tips .reference {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 17px;
+	text-transform: none;
+	line-height: 23px;
+	margin-top: 10px;
+	color: #999;
+}
+
+
+.modal {
+	width: 100%;
+}
+
+.bench .ok::after {
+	background: url(../img/ok.png) no-repeat center center;
+	background-size: contain;
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	height: 50px;
+	width: 50px;
+	content: '';
+}
+
+.bench .ok {
+	opacity: 1;
+}
+
+.shake {
+	-webkit-animation: animateShake 0.3s ease-in-out 3 alternate;
+	-moz-animation: animateShake 0.3s ease-in-out 3 alternate;
+	animation: animateShake 0.3s ease-in-out 3 alternate;
+}
+
+@-webkit-keyframes animateShake {
+	0% {
+		margin-left: 0px;
+	}
+	50% {
+		margin-left: -10px;
+	}
+	100% {
+		margin-left: 10px;
+	}
+}
+
+@-moz-keyframes animateShake {
+	0% {
+		margin-left: 0px;
+	}
+	50% {
+		margin-left: -10px;
+	}
+	100% {
+		margin-left: 10px;
+	}
+}
+
+@keyframes animateShake {
+	0% {
+		margin-left: 0px;
+	}
+	50% {
+		margin-left: -10px;
+	}
+	100% {
+		margin-left: 10px;
+	}
+}
+
+.cloud {
+	background: url(../img/cloud.png) no-repeat center center;
+	background-size: cover;
+	height: 175px;
+	width: 355px;
+	font-family: 'Skater Girls Rock', skater_girls_rockregular;
+	text-transform: uppercase;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+.pulsate{
+    -webkit-animation: animatePulsate 1s ease-out infinite forwards;
+	-moz-animation: animatePulsate 1s ease-out infinite forwards;
+	animation: animatePulsate 1s ease-out infinite forwards;
+}
+.thermometer {
+	position: absolute;
+	right: 60px;
+	top: 135px;
+	/*height: 750px;*/
+	height: 75%;
+	width: 105px;
+	z-index: -1;
+}
+
+.thermometer .front {
+	background: url(../img/thermometer.png) no-repeat center center;
+	background-size: 100% 100%;
+	position: absolute;
+	/*height: 750px;*/
+	height: 100%;
+	width: 105px;
+	right: 0px;
+	top: 0px;
+
+}
+
+.thermometer .bg-white {
+	background: #fff;
+	position: relative;
+	/*height: 720px;
+	width: 75px;
+	left: 15px;
+	top: 15px;*/
+	height: 96%;
+	/*width: 57px;*/
+	width: 68%;
+	/*left: 25px;*/
+	margin: 0 auto;
+	top: 15px;
+	z-index: -5;
+	overflow: hidden;
+}
+
+.thermometer .bg-white .water {
+	background: #0fc5f3;
+	position: absolute;
+	height: 0%;
+	width: 75px;
+	bottom: 0px;
+	z-index: -5;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.intro-plant {
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%, -50%);
+	height: 485px;
+	width: 280px;
+	background: url(../img/plant.png) no-repeat center center;
+	background-size: contain;
+	z-index: 99;
+}
+
+.intro-plant .ballon {
+	background: url(../img/ballon.png) no-repeat center center;
+	background-size: contain;
+	position: relative;
+	right: 210px;
+	top: 170px;
+	height: 200px;
+	padding: 25px;
+	width: 300px;
+	font-family: 'Skater Girls Rock', skater_girls_rockregular;
+	text-transform: uppercase;
+	font-size: 40px;
+	line-height: 35px;
+	vertical-align: middle;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 1s linear;
+}
+
+.intro-plant .ballon.ballon2 {
+	right: -80px;
+	top: -10px;
+	width: 250px;
+	background-image: url(../img/ballon2.png);
+	font-size: 32px;
+	line-height: 30px;
+}
+
+.intro-plant .ballon .dialog {
+	position: absolute;
+	right: 0px;
+	top: 49%;
+	transform: translateY(-50%);
+	padding: 10px;
+	width: 100%;
+	display: inline;
+	text-align: center;
+}
+
+.intro-plant .show {
+	opacity: 1;
+	-webkit-animation: animateDialog 1s ease-out 1 forwards;
+	-moz-animation: animateDialog 1s ease-out 1 forwards;
+	animation: animateDialog 1s ease-out 1 forwards;
+}
+
+.emoticon {
+	background: url(../img/plant-normal.png) no-repeat center bottom;
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	-webkit-transition: background-image 1s ease-in-out;
+	transition: background-image 1s ease-in-out;
+}
+
+.animateYes {
+	-webkit-animation: animateEmojiYes 2s ease-out infinite forwards;
+	-moz-animation: animateEmojiYes 2s ease-out infinite forwards;
+	animation: animateEmojiYes 2s ease-out infinite forwards;
+}
+
+.cool {
+	background-image: url(../img/plant-cool.png);
+}
+
+.cry {
+	background-image: url(../img/plant-cry.png);
+	-webkit-animation: animateEmojiYes 5s ease-out infinite forwards;
+	-moz-animation: animateEmojiYes 5s ease-out infinite forwards;
+	animation: animateEmojiYes 5s ease-out infinite forwards;
+}
+
+.cute {
+	background-image: url(../img/plant-cute.png);
+	-webkit-animation: animateEmojiYup 4s ease-out infinite forwards;
+	-moz-animation: animateEmojiYup 4s ease-out infinite forwards;
+	animation: animateEmojiYup 4s ease-out infinite forwards;
+}
+
+.good {
+	background-image: url(../img/plant-good.png);
+	-webkit-animation: animateEmojiYes 2.5s ease-out infinite forwards;
+	-moz-animation: animateEmojiYes 2.5s ease-out infinite forwards;
+	animation: animateEmojiYes 2.5s ease-out infinite forwards;
+}
+
+.haha {
+	background-image: url(../img/plant-haha.png);
+	-webkit-animation: animateEmojiYes 2.5s ease-out infinite forwards;
+	-moz-animation: animateEmojiYes 2.5s ease-out infinite forwards;
+	animation: animateEmojiYes 2.5s ease-out infinite forwards;
+}
+
+.haha2 {
+	background-image: url(../img/plant-haha2.png);
+	-webkit-animation: animateEmojiYes 2.5s ease-out infinite forwards;
+	-moz-animation: animateEmojiYes 2.5s ease-out infinite forwards;
+	animation: animateEmojiYes 2.5s ease-out infinite forwards;
+}
+
+.happy {
+	background-image: url(../img/plant-happy.png);
+	-webkit-animation: animateEmojiYes 2.5s ease-out infinite forwards;
+	-moz-animation: animateEmojiYes 2.5s ease-out infinite forwards;
+	animation: animateEmojiYes 2.5s ease-out infinite forwards;
+}
+
+.humpf {
+	background-image: url(../img/plant-humpf.png);
+	-webkit-animation: animateEmojiNo 10s ease-out infinite forwards;
+	-moz-animation: animateEmojiNo 10s ease-out infinite forwards;
+	animation: animateEmojiNo 10s ease-out infinite forwards;
+}
+
+.love {
+	background-image: url(../img/plant-love.png);
+	-webkit-animation: animateEmojiYup 3s ease-out infinite forwards;
+	-moz-animation: animateEmojiYup 3s ease-out infinite forwards;
+	animation: animateEmojiYup 3s ease-out infinite forwards;
+}
+
+.meh {
+	background-image: url(../img/plant-meh.png);
+}
+
+.normal {
+	background-image: url(../img/plant-normal.png);
+}
+
+.notcool {
+	background-image: url(../img/plant-notcool.png);
+	-webkit-animation: animateEmojiNo 8s ease-out infinite forwards;
+	-moz-animation: animateEmojiNo 8s ease-out infinite forwards;
+	animation: animateEmojiNo 8s ease-out infinite forwards;
+}
+
+.sad {
+	background-image: url(../img/plant-sad.png);
+}
+
+.super {
+	background-image: url(../img/plant-super.png);
+	-webkit-animation: animateEmojiYes .5s ease-out infinite forwards;
+	-moz-animation: animateEmojiYes .5s ease-out infinite forwards;
+	animation: animateEmojiYes .5s ease-out infinite forwards;
+}
+
+.tongue {
+	background-image: url(../img/plant-tongue.png);
+	-webkit-animation: animateEmojiYes .5s ease-out infinite forwards;
+	-moz-animation: animateEmojiYes .5s ease-out infinite forwards;
+	animation: animateEmojiYes .5s ease-out infinite forwards;
+}
+
+.wow {
+	background-image: url(../img/plant-wow.png);
+	-webkit-animation: animateEmojiYup 2s ease-out infinite forwards;
+	-moz-animation: animateEmojiYup 2s ease-out infinite forwards;
+	animation: animateEmojiYup 2s ease-out infinite forwards;
+}
+
+@-webkit-keyframes animateDialog {
+	0% {
+		margin-top: 10px;
+	}
+	100% {
+		margin-top: 0px;
+	}
+}
+
+@-moz-keyframes animateDialog {
+	0% {
+		margin-top: 10px;
+	}
+	100% {
+		margin-top: 0px;
+	}
+}
+
+@keyframes animateDialog {
+	0% {
+		margin-top: 10px;
+	}
+	100% {
+		margin-top: 0px;
+	}
+}
+
+.blink {
+	-webkit-animation: animateBlink 0.4s ease-out 10 forwards;
+	-moz-animation: animateBlink 0.4s ease-out 10 forwards;
+	animation: animateBlink 0.4s ease-out 10 forwards;
+}
+
+@-webkit-keyframes animateBlink {
+	0% {
+		background-color: #087aff;
+	}
+	50% {
+		background-color: #3acc52;
+	}
+	100% {
+		background-color: #087aff;
+	}
+}
+
+@-moz-keyframes animateBlink {
+	0% {
+		background-color: #087aff;
+	}
+	50% {
+		background-color: #3acc52;
+	}
+	100% {
+		background-color: #087aff;
+	}
+}
+
+@keyframes animateBlink {
+	0% {
+		background-color: #087aff;
+	}
+	50% {
+		background-color: #3acc52;
+	}
+	100% {
+		background-color: #087aff;
+	}
+}
+
+@-webkit-keyframes animateEmojiYes {
+	0% {
+		bottom: 0;
+	}
+	60% {
+		bottom: -5px;
+	}
+	100% {
+		bottom: 0;
+	}
+}
+
+@-moz-keyframes animateEmojiYes {
+	0% {
+		bottom: 0;
+	}
+	60% {
+		bottom: -5px;
+	}
+	100% {
+		bottom: 0;
+	}
+}
+
+@keyframes animateEmojiYes {
+	0% {
+		bottom: 0;
+	}
+	60% {
+		bottom: -5px;
+	}
+	100% {
+		bottom: 0;
+	}
+}
+
+@-webkit-keyframes animateEmojiNo {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: -3px;
+	}
+	40% {
+		left: 3px;
+	}
+	60% {
+		left: -3px;
+	}
+	60% {
+		left: 3px;
+	}
+	100% {
+		left: 0;
+	}
+}
+
+@-moz-keyframes animateEmojiNo {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: -3px;
+	}
+	40% {
+		left: 3px;
+	}
+	60% {
+		left: -3px;
+	}
+	60% {
+		left: 3px;
+	}
+	100% {
+		left: 0;
+	}
+}
+
+@keyframes animateEmojiNo {
+	0% {
+		left: 0;
+	}
+	10% {
+		left: -3px;
+	}
+	20% {
+		left: 3px;
+	}
+	30% {
+		left: -3px;
+	}
+	50% {
+		left: 3px;
+	}
+	100% {
+		left: 0;
+	}
+}
+
+@-webkit-keyframes animateEmojiYup {
+	0% {
+		transform: scale(1);
+	}
+	60% {
+		transform: scale(0.95);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@-moz-keyframes animateEmojiYup {
+	0% {
+		transform: scale(1);
+	}
+	60% {
+		transform: scale(0.95);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes animateEmojiYup {
+	0% {
+		transform: scale(1);
+	}
+	60% {
+		transform: scale(0.95);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@-webkit-keyframes animatePulsate {
+	0% {
+		transform: scale(1);
+        opacity: 1;
+	}
+	60% {
+        transform: scale(1.10);
+        opacity: 0.8;
+	}
+	100% {
+		transform: scale(1);
+        opacity: 1;
+	}
+}
+
+@-moz-keyframes animatePulsate {
+	0% {
+		transform: scale(1);
+        opacity: 1;
+	}
+	60% {
+        transform: scale(1.10);
+        opacity: 0.8;
+	}
+	100% {
+		transform: scale(1);
+        opacity: 1;
+	}
+}
+
+@keyframes animatePulsate {
+	0% {
+		transform: scale(1);
+        opacity: 1;
+	}
+	60% {
+        transform: scale(1.10);
+        opacity: 0.8;
+	}
+	100% {
+		transform: scale(1);
+        opacity: 1;
+	}
+}
+
+.tab-pane.fade {
+	transition: opacity 1s linear;
+}
+
+.lives {
+	display: block;
+	height: 60px;
+}
+
+.lives .heart {
+	display: block;
+	float: left;
+	width: 70px;
+	height: 60px;
+	background: #000;
+	margin-right: 10px;
+	background: url('../img/heart-off.png') center center no-repeat;
+	background-size: 100% 100%;
+	-webkit-transition: background-image 1s ease-in-out;
+	transition: background-image 1s ease-in-out;
+}
+
+.lives .heart.on {
+	background: url('../img/heart-on.png') center center no-repeat;
+	background-size: 100% 100%;
+}
+
+.cloud .t1 {
+	display: block;
+	width: 100px;
+	text-align: left;
+	font-size: 30px;
+	position: relative;
+	top: 25px;
+	left: 70px;
+}
+
+.cloud .points {
+	color: #f95428;
+	font-size: 120px;
+	line-height: 100px;
+	position: relative;
+	top: 8px;
+	left: 8px;
+	width: 215px;
+	display: inline-block;
+}
+
+.cloud .t2 {
+	display: inline-block;
+	text-align: left;
+	position: relative;
+	top: 3px;
+	left: 5px;
+	width: 90px;
+	line-height: 20px;
+}
+
+.cloud .t2 .l1 {
+	font-size: 25px;
+	display: block;
+}
+
+.cloud .t2 .l2 {
+	font-size: 16.2px;
+	display: block;
+}
+
+.cloud .t2 .l3 {
+	font-size: 22px;
+	display: block;
+}
+
+.intro-button {
+	position: absolute;
+	left: 50%;
+	bottom: 3%;
+	transform: translate(-50%, -50%);
+}
+
+.text-center {
+	text-align: center;
+}
+
+.bubble {
+	background: #83e6ff;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.instructions {
+	margin: 55px 30px 15px;
+	text-align: center;
+}
+
+.title {
+	font-family: 'Skater Girls Rock', skater_girls_rockregular;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-size: 55px;
+}
+
+.desc {
+	font-family: 'Skater Girls Rock', skater_girls_rockregular;
+	text-transform: uppercase;
+	font-size: 34px;
+    line-height: 37px;
+    letter-spacing: 1px;
+}
+
+@-webkit-keyframes animateBubble {
+	0% {
+		margin-top: 1000px;
+	}
+	100% {
+		margin-top: -100%;
+	}
+}
+
+@-moz-keyframes animateBubble {
+	0% {
+		margin-top: 1000px;
+	}
+	100% {
+		margin-top: -100%;
+	}
+}
+
+@keyframes animateBubble {
+	0% {
+		margin-top: 1000px;
+	}
+	100% {
+		margin-top: -100%;
+	}
+}
+
+@-webkit-keyframes sideWays {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: 15px;
+	}
+}
+
+@-moz-keyframes sideWays {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: 15px;
+	}
+}
+
+@keyframes sideWays {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: 15px;
+	}
+}
+
+.x1 {
+	-webkit-animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: -5%;
+	top: 5%;
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x2 {
+	-webkit-animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	left: 5%;
+	top: 80%;
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x3 {
+	-webkit-animation: animateBubble 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 10%;
+	top: 40%;
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+.x4 {
+	-webkit-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	left: 20%;
+	top: 0;
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x5 {
+	-webkit-animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	left: 30%;
+	top: 50%;
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.x6 {
+	-webkit-animation: animateBubble 11s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 11s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 11s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 50%;
+	top: 0;
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.x7 {
+	-webkit-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 65%;
+	top: 70%;
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x8 {
+	-webkit-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	left: 80%;
+	top: 10%;
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x9 {
+	-webkit-animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	left: 90%;
+	top: 50%;
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x10 {
+	-webkit-animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 80%;
+	top: 80%;
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.gradientbg {
+	background: radial-gradient(circle, rgba(255, 255, 255, 0.9698375870069605) 10%, rgba(255, 255, 255, 0.777262180974478) 23%, rgba(255, 255, 255, 0) 55%);
+}
+
+.pages {
+	overflow-x: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
+}
+
+.all-pages {
+	margin-left: 0;
+	display: flex;
+	position: absolute;
+	min-height: 100vh;
+}
+
+.page {
+	position: relative;
+	display: inline-block;
+	min-height: 100vh;
+}
+
+.timer-text {
+	font-family: 'Arial';
+	font-weight: bold;
+	top: 20px;
+	position: relative;
+	font-size: 40px;
+	line-height: 2px
+}
+
+.circle {
+	position: relative;
+	top: 10px;
+	left: 10px;
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+}
+
+.feeling-thirsty .circle {
+	background: #eec497;
+}
+
+.progress-circle {
+	position: relative;
+	text-align: center;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	background-color: #087aff;
+	background-image: linear-gradient(91deg, transparent 50%, #eec497 50%),
+	linear-gradient(90deg, #eec497 50%, transparent 50%);
+}
+
+.timer-points {
+	font-size: 10px;
+}
+
+.timer.points {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+.score {
+	position: absolute;
+	top: 76%;
+	right: 10%;
+}
+
+.score .t1 {
+	font-family: 'Skater Girls Rock', skater_girls_rockregular;
+	text-transform: uppercase;
+	color: #000;
+	display: block;
+	text-align: right;
+	font-size: 30px;
+	height: 35px;
+	position: relative;
+	right: 5px;
+}
+
+.score .yourpoints {
+	font-family: 'Skater Girls Rock', skater_girls_rockregular;
+	text-transform: uppercase;
+	color: #f95428;
+	font-size: 100px;
+	line-height: 80px;
+	height: 65px;
+	display: block;
+	text-align: right;
+}
+
+.ranking-list {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 33px;
+	font-weight: bold;
+}
+
+.ranking-list .line:nth-child(odd) {
+	background: rgba(255, 255, 255, 0.25);
+	display: block;
+}
+
+.ranking-list .line .ranking-name {
+	display: inline-block;
+	padding: 5px 12px;
+	width: 77%;
+}
+
+.ranking-list .line .ranking-score {
+	display: inline-block;
+	padding: 5px;
+	width: 21%;
+}
+
+.scoretop {
+	margin-top: 45px;
+	margin-bottom: 5px;
+}
+
+.ranking-list .weekscore {
+	font-family: 'Skater Girls Rock', skater_girls_rockregular;
+	text-transform: uppercase;
+	color: #f95428;
+	font-size: 100px;
+	line-height: 80px;
+	height: 65px;
+	text-align: center
+}
+
+.content-ranking {
+	opacity: 0;
+}
+
+.input-team {
+	width: 95%;
+	border: 2px #000 solid;
+	border-radius: 10px;
+	padding: 5px 10px;
+	font-size: 35px;
+	font-weight: 400;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
